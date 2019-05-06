@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".presentation.activity.DetailsActivity">
+
+    <ImageView
+            android:layout_width="96dp"
+            android:layout_height="110dp" app:srcCompat="@drawable/ic_menu_camera"
+            android:id="@+id/ivBookCover" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="8dp" android:layout_marginStart="8dp"
+            android:contentDescription="@string/label_book_cover"/>
+    <TextView
+            android:text="@string/label_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView1"
+            app:layout_constraintStart_toEndOf="@+id/ivBookCover"
+            android:layout_marginLeft="8dp" android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="46dp"/>
+    <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/tvTitle"
+            app:layout_constraintStart_toEndOf="@+id/ivBookCover" android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp" android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginRight="8dp"
+            android:hint="@string/hint_book_title"
+            style="@style/large_text_bold"
+            tools:ignore="Autofill" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView1"/>
+    <TextView
+            android:text="@string/label_author"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp" app:layout_constraintTop_toBottomOf="@+id/ivBookCover"
+            android:layout_marginTop="8dp"/>
+    <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/tvAuthor" android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginRight="8dp" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" android:hint="@string/hint_book_author"
+            android:textSize="@dimen/normal_text"
+            tools:ignore="Autofill" />
+    <TextView
+            android:text="@string/label_publish_year"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView3" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/tvAuthor" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="8dp" android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" android:layout_marginRight="8dp"/>
+    <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/tvPublishYear" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginRight="8dp"
+            android:hint="@string/hint_publish_year"
+            android:textSize="@dimen/normal_text"
+            tools:ignore="Autofill"/>
+    <TextView
+            android:text="@string/label_description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView4" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/tvPublishYear" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"/>
+    <TextView
+            android:layout_width="0dp"
+            android:layout_height="66dp"
+            android:ems="10"
+            android:id="@+id/tvDescription"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" android:hint="@string/hint_book_descriptions"
+            android:textSize="@dimen/normal_text"
+            tools:ignore="Autofill"/>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent">
+        <Button
+                android:text="@string/label_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/btEdit" android:layout_weight="1"
+                tools:ignore="ButtonStyle"/>
+        <Button
+                android:text="@string/label_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/btCancel" android:layout_weight="1"
+                tools:ignore="ButtonStyle"/>
+    </LinearLayout>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvId" app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/tvDescription" android:visibility="invisible"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

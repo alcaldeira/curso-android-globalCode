@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Exercicio3</string>
+    <string name="action_settings">Settings</string>
+    <string name="label_programming_language_image">Programming Language Image</string>
+    <string name="label_title">Título:</string>
+    <string name="label_year">Ano:</string>
+    <string name="label_description">Descrição</string>
+    <string name="label_save">Salvar</string>
+    <string name="label_cancel">Cancelar</string>
+    <string name="hint_title">Informe o título</string>
+    <string name="hint_year">Informe o ano</string>
+    <string name="hint_description">Informe a descrição</string>
+    <string name="msg_title_required">Título é obrigatório!</string>
+    <string name="msg_launch_year_required">Ano de lançamento é obrigatório!</string>
+    <string name="msg_description_required">Descrição é obrigatória!</string>
+</resources>
